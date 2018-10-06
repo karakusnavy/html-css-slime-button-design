@@ -1,0 +1,39 @@
+.button--slime{
+    display:inline-block;
+}
+.button--slime:after{
+    content: '';
+    display:block;
+    width: 190px;
+    height: 185px;
+    background-image: url('https://www.goodfreephotos.com/albums/vector-images/dripping-slime-vector-clipart.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: transform 0.1s ease-out;
+    transform-origin: center top;
+    transform: scaleY(0);
+    filter: hue-rotate(-90deg);
+}
+.button--slime:hover:after {
+    transform: scaleY(1);
+    transition: transform 1s ease-in;
+}
+button{
+    border:none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor:pointer;
+    font-weight: 600;
+    background: #fa5c1d;
+    width: 190px;
+    outline:none;
+    height: 40px;
+}
+button:focus{
+   transition: 0.4s;
+   padding-left:10px;
+}
+button:focus:after{
+    transition: 0.4s;
+   padding-left:0px;
+}
