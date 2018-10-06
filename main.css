@@ -29,11 +29,3 @@ button{
     outline:none;
     height: 40px;
 }
-button:focus{
-   transition: 0.4s;
-   padding-left:10px;
-}
-button:focus:after{
-    transition: 0.4s;
-   padding-left:0px;
-}
